@@ -2,7 +2,7 @@ import yfinance as yf
 from datetime import datetime
 import pytz
 
-def handler(request):
+def default(request):
     try:
         symbol = request.query.get("symbol", None)
         if not symbol:
